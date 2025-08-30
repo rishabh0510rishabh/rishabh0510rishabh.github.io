@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio - Rishabh Mishra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="main-header" id="mainHeader">
+        <div class="logo">Rishabh Mishra</div>
+        <nav>
+            <a href="#hero" class="nav-btn">Home</a>
+            <a href="#about" class="nav-btn">About</a>
+            <a href="#services" class="nav-btn">Services</a>
+            <a href="#projects" class="nav-btn">Projects</a>
+            <a href="#skills" class="nav-btn">Skills</a>
+            <a href="#experience" class="nav-btn">Journey</a>
+            <a href="#contact" class="nav-btn">Contact</a>
+        </nav>
+    </header>
+
+    <div class="animated-background">
+        <div class="bg-grid"></div>
+        <div class="bg-waves"></div>
+        <div class="bg-orbs">
+            <div class="orb"></div>
+            <div class="orb"></div>
+            <div class="orb"></div>
+            <div class="orb"></div>
+        </div>
+    </div>
+    
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Rishabh Mishra</h1>
+            <p><span id="typing-text"></span></p>
+            <button class="cta-button" onclick="scrollToSection('about')">Explore My Universe</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                🧑‍💻
+            </div>
+            <div class="about-content">
+                <h3>Crafting Digital Experiences</h3>
+                <p>I'm a passionate developer and designer with a love for creating immersive, beautiful, and intuitive digital experiences. I recently started web development and in the future, I plan to explore Flutter and Unreal Engine.</p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <span>8+</span>
+                        <p>Months Experience</p>
+                    </div>
+                    <div class="highlight">
+                        <span>4+</span>
+                        <p>Projects Done</p>
+                    </div>
+                    <div class="highlight">
+                        <span>10+</span>
+                        <p>Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>What I Do</h2>
+            <p>I specialize in building high-quality web experiences and bringing ideas to life in the digital space.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Creating responsive, high-performance websites and applications using modern technologies like React, Node.js, and WebGL.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎮</div>
+                <h3>Gaming</h3>
+                <p>Exploring game development and design with a strong interest in creating immersive, interactive worlds using engines like Unreal Engine.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h3>UI/UX Design</h3>
+                <p>Focusing on user-centric design principles to create intuitive, accessible, and beautiful interfaces that are a joy to use.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>A showcase of recent work that demonstrates creativity, technical skill, and attention to detail</p>
+        </div>
+        <div class="projects-grid">
+            <!-- To add your image, replace the placeholder URL in data-image -->
+            <div class="project-card" 
+                 data-title="Invoice Generator" 
+                 data-description="A practical application built with Python for generating professional invoices. This tool simplifies the billing process by allowing users to input details and automatically create, save, and manage invoices, streamlining financial record-keeping." 
+                 data-link="https://github.com/rishabh0510rishabh/Invoice-generator"
+                 data-image="https://placehold.co/600x400/8a2be2/ffffff?text=Invoice+Generator">
+                <div class="project-image" style="background-image: url('https://placehold.co/600x400/8a2be2/ffffff?text=Invoice+Generator')"></div>
+                <div class="project-content">
+                    <h3>Invoice Generator</h3>
+                    <p>A Python-based tool to automate professional invoice creation.</p>
+                </div>
+            </div>
+            
+            <div class="project-card" 
+                 data-title="Railway Ticket Booking System" 
+                 data-description="A foundational railway ticket booking system developed to manage reservations and user data. This project demonstrates core programming concepts for handling data, user authentication, and transaction processing in a console environment." 
+                 data-link="https://github.com/rishabh0510rishabh/railway-booking-system"
+                 data-image="https://placehold.co/600x400/4ecdc4/ffffff?text=Ticket+Booking+App">
+                <div class="project-image" style="background-image: url('https://placehold.co/600x400/4ecdc4/ffffff?text=Ticket+Booking+App')"></div>
+                <div class="project-content">
+                    <h3>Ticket Booking Application</h3>
+                    <p>A console-based railway ticket booking application.</p>
+                </div>
+            </div>
+            
+            <div class="project-card" 
+                 data-title="Future Project" 
+                 data-description="This spot is reserved for future projects! I am always learning and building, with plans to explore technologies like Flutter and Unreal Engine to create even more engaging and complex applications." 
+                 data-link="#"
+                 data-image="https://placehold.co/600x400/ff6b6b/ffffff?text=Future+Project">
+                <div class="project-image" style="background-image: url('https://placehold.co/600x400/ff6b6b/ffffff?text=Future+Project')"></div>
+                <div class="project-content">
+                    <h3>Future Project</h3>
+                    <p>Exploring new technologies and building exciting applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2>Skills & Technologies</h2>
+            <p>Constantly learning and mastering new technologies to stay at the forefront of web development</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item"><div class="skill-icon">🎯</div><h4>JavaScript</h4></div>
+            <div class="skill-item"><div class="skill-icon">🎨</div><h4>HTML/CSS</h4></div>
+            <div class="skill-item"><div class="skill-icon">🐍</div><h4>Python/Flask</h4></div>
+            <div class="skill-item"><div class="skill-icon">🔥</div><h4>Node.js</h4></div>
+            <div class="skill-item"><div class="skill-icon">💾</div><h4>SQL</h4></div>
+            <div class="skill-item"><div class="skill-icon">++</div><h4>C/C++</h4></div>
+            <div class="skill-item"><div class="skill-icon">🐙</div><h4>Git/GitHub</h4></div>
+            <div class="skill-item"><div class="skill-icon">✨</div><h4>Figma</h4></div>
+            <div class="skill-item"><div class="skill-icon">📝</div><h4>Notion</h4></div>
+        </div>
+    </section>
+    
+    <section id="experience" class="experience">
+        <div class="section-header">
+            <h2>My Journey</h2>
+            <p>A timeline of my professional experience and key milestones.</p>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>B.Tech in Information Technology</h3>
+                    <span>2024 - Present | Actively Studying</span>
+                    <p>Currently in my second year, building a strong foundation in computer science, software development, and exploring new technologies.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>Started Development Journey</h3>
+                    <span>Early 2025 | Self-Taught</span>
+                    <p>Began my journey into programming and web development, quickly learning foundational languages and tools like Python, C++, HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Completed Higher Secondary (12th Grade)</h3>
+                    <span>2024</span>
+                    <p>Successfully completed my higher secondary education, which sparked my interest in pursuing a career in technology and computer science.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Let's Create Something Amazing</h2>
+            <p>Ready to bring your vision to life? Let's collaborate and build something extraordinary together</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="mailto:rishabhmishra0510@gmail.com" class="social-link" title="Email">📧</a>
+            <a href="https://github.com/rishabh0510rishabh" class="social-link" title="GitHub" target="_blank">🐙</a>
+            <a href="https://www.linkedin.com/in/rishabh-mishra-89433a328/" class="social-link" title="LinkedIn" target="_blank">💼</a>
+        </div>
+        
+        <form class="contact-form" onsubmit="event.preventDefault();">
+            <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+            <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+            <div class="form-group"><textarea rows="5" placeholder="Tell me about your project vision..." required></textarea></div>
+            <button type="submit" class="submit-btn">Launch Project</button>
+        </form>
+    </section>
+
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalCloseBtn">&times;</button>
+            <div id="modal-image"></div>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a href="#" id="modal-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+    </div>
+
+    <div id="back-to-top" onclick="scrollToSection('hero')">↑</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
