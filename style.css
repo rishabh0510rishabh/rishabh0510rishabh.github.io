@@ -395,3 +395,59 @@ body {
     #back-to-top { width: 45px; height: 45px; font-size: 1.2rem; bottom: 20px; right: 20px; cursor: pointer; }
     .project-card, .modal-close, .submit-btn { cursor: pointer; }
 }
+
+/* --- Added styles for smaller mobile screens --- */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2rem; /* Further reduce font size for very small screens */
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .skills, .projects, .contact, .experience, .services, #about {
+        padding: 80px 15px; /* Reduce vertical and horizontal padding */
+    }
+
+    .about-content h3 {
+        font-size: 2rem;
+    }
+
+    .about-highlights {
+        flex-direction: column; /* Stack highlights vertically */
+        gap: 15px;
+    }
+
+    .projects-grid, .services-grid {
+        gap: 30px; /* Reduce gap between cards */
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Allow more flexible skill items */
+        gap: 20px;
+    }
+
+    .skill-item {
+        padding: 20px;
+    }
+
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .modal-content {
+        padding: 25px;
+        width: 95%;
+    }
+
+    #modal-title {
+        font-size: 1.8rem;
+    }
+
+    #modal-image {
+        height: 200px;
+    }
+}
